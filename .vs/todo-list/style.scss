@@ -5,15 +5,21 @@
     border-radius: 5px;
     color: #fff;
     width: 700px;
-    height: 70px;
+    min-height: 70px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
     .inner-blok{
+        width: 90px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
+    }
+    p{
+        width: 300px;
     }
 }
 .header{
@@ -46,6 +52,7 @@ input{
     padding: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius:5px ;
+    outline: none;
     
 }
 #btn{
@@ -62,6 +69,19 @@ input{
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+.ToDoComplited{
+ 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    flex-direction: column;
+&>.blok{
+    background-color: rgb(152, 172, 39);
+    border: 2px solid rgb(94, 232, 48);
+}
 }
 .blur{
 position: relative;
